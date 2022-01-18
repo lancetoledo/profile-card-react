@@ -1,38 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+}
+
 .App {
-  text-align: center;
+    background-color: aqua;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./bodyBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    width: 300px;
+    height: 100px;
+    border-bottom: .5px solid lightgray;
+    background-color: black;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.frame {
+    position: absolute;
+    margin-bottom: 100px;
+    transition: 0.2s all;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frame:hover {
+    transform: translateY(-10px);
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+    width: 100%;
+    height: 100px;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.name {
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    margin-top: 15px;
+    /* background-color: yellow; */
+}
+
+#full_name {
+    font-weight: 900;
+}
+
+#age{
+    color: gray;
+}
+
+#location {
+    margin-top: 5px;
+    font-size: x-small;
+    color: gray;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 0.1px solid lightgray;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all;
+}
+
+.stats:hover {
+    transform: translateY(-10px);
+}
+
+.number {
+    font-weight: 900;
+}
+
+.metric {
+    font-size: x-small;
+    color: gray;
+}
+
